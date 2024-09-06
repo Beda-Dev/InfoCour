@@ -1,0 +1,104 @@
+/* Styles globaux */
+body {
+    font-size: 1.3rem; /* Taille de police améliorée pour une meilleure lisibilité */
+    color: ;
+}
+h1{
+    text-transform: uppercase;
+
+}
+a{
+    text-decoration: none;
+}
+/* Suppression des styles par défaut des listes */
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styles du header */
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Ajout de padding pour un meilleur espacement */
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid blue; /* Bordure correctement définie */
+    padding: 0.5em 1em; /* Ajout de padding pour l'espacement interne */
+    border-radius: 5%;
+}
+
+ul li a:hover {
+    color: rgb(12, 14, 13);
+    border: 4px solid white;
+    background-color: white;
+}
+.Cours{
+    color: rgb(12, 14, 13);
+    border: 4px solid white;
+    background-color: white;
+}
+.contenaire{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+.sujets{
+    padding: 3em;
+}
+.sujets .sujet{
+    padding: 2em;
+    margin: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5%;
+    background-color: cadetblue;
+    box-shadow: 10px 5px 2px 1px;
+    color: aliceblue;
+}
+.sujet a{
+    text-decoration: none;
+}
+
+
+/* Styles du footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0 ; /* Ajout de padding pour plus d'espace autour du texte */
+}
+
+footer ul {
+    display: flex; /* Disposition horizontale des éléments */
+    padding: 0;
+    margin: 0;
+    gap: 30px; /* Espacement entre les éléments de la liste */
+    justify-content: center; /* Centrer les éléments de la liste */
+}
+
+/* Responsiveness pour petits écrans */
+@media (max-width: 600px) {
+    header ul,
+    footer ul , div{
+        flex-direction: column; /* Les éléments se placent en colonne sur petits écrans */
+        gap: 10px; /* Réduction de l'espace entre les éléments */
+    }
+
+}

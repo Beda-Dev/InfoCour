@@ -1,0 +1,107 @@
+body{
+    font-size: 1.125rem;
+    
+    
+}
+h1{
+    text-transform: uppercase;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+/* Styles du header */
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Ajout de padding pour un meilleur espacement */
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+ul li a{
+    border: 2px solid blue;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5%
+
+}
+ul li a:hover{
+    border: 4px solid white;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 1em;
+    background: white;
+
+}
+fieldset{
+    text-align: center;
+    width: 30em;
+    height: auto;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 5px 10px;
+}
+.formu{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+input{
+background-color: white;
+height: 20px;
+width: 300px;
+text-align: center;;
+border-radius: 5px;
+padding: 1em;
+border: navy;
+margin-bottom: 15px;
+color: #000;
+
+}
+.che{ /*pour centrer un bolck au centre du conteneur*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connexion{
+    color: rgb(12, 14, 13);
+    border: 4px solid white;
+    background-color: white;
+}
+button{
+    border-radius : 5px  ;
+    padding: 15px;
+    background-color: darkblue;
+    color: whitesmoke;
+    cursor:-moz-zoom-in;
+}
+.button:{
+    padding: 20px;
+    color: #000;
+    background: whitesmoke;
+    transition-duration: 2s;
+}
+footer{
+    color: white;
+    background: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsiveness pour petits écrans */
+@media (max-width: 600px) {
+    header ul,
+    footer ul {
+        flex-direction: column; /* Les éléments se placent en colonne sur petits écrans */
+        gap: 10px; /* Réduction de l'espace entre les éléments */
+    }
+}

@@ -1,0 +1,114 @@
+/* Styles globaux */
+body {
+    font-size: 1.3rem; /* Taille de police améliorée pour une meilleure lisibilité */
+}
+h1{
+    text-transform: uppercase;
+
+}
+
+/* Suppression des styles par défaut des listes */
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styles du header */
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Ajout de padding pour un meilleur espacement */
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid blue; /* Bordure correctement définie */
+    padding: 0.5em 1em; /* Ajout de padding pour l'espacement interne */
+    border-radius: 5%;
+}
+
+ul li a:hover {
+    color: rgb(12, 14, 13);
+    border: 4px solid white;
+    background-color: white;
+}
+.Acceuil{
+    color: rgb(12, 14, 13);
+    border: 4px solid white;
+    background-color: white;
+}
+.sec ul li{
+    margin-bottom: 1.5em;
+}
+
+/* Styles des sections */
+section {
+    text-align: center;
+    background-color: white;
+    padding: 20px; /* Ajout de padding pour un meilleur espacement */
+}
+
+/* Styles du carrousel d'images */
+.image-carousel {
+    width: 100%; /* Largeur du conteneur */
+    overflow: hidden; /* Cacher les images qui dépassent du conteneur */
+    white-space: nowrap; /* Empêche les images de se casser sur une nouvelle ligne */
+}
+
+.image-track {
+    display: inline-block;
+    animation: scroll 30s linear infinite; /* Défilement plus lent et fluide */
+}
+
+.image-track img {
+    height: 150px; /* Hauteur fixe des images */
+    width: auto; /* Largeur automatique en fonction du ratio de l'image */
+    object-fit: cover; /* Remplir le conteneur sans laisser d'espaces vides */
+    margin-right: 10px; /* Espacement entre les images */
+    display: inline-block; /* Les images restent sur une seule ligne */
+    border-radius: 10%; /* Arrondi des bords des images */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Début de l'animation (hors écran à droite) */
+    }
+    100% {
+        transform: translateX(-100%); /* Fin de l'animation (hors écran à gauche) */
+    }
+}
+
+/* Styles du footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0 ; /* Ajout de padding pour plus d'espace autour du texte */
+}
+
+footer ul {
+    display: flex; /* Disposition horizontale des éléments */
+    padding: 0;
+    margin: 0;
+    gap: 30px; /* Espacement entre les éléments de la liste */
+    justify-content: center; /* Centrer les éléments de la liste */
+}
+
+/* Responsiveness pour petits écrans */
+@media (max-width: 600px) {
+    header ul,
+    footer ul , div{
+        flex-direction: column; /* Les éléments se placent en colonne sur petits écrans */
+        gap: 10px; /* Réduction de l'espace entre les éléments */
+    }
+
+}

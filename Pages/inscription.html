@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../styles/inscription.css">
+</head>
+<body>
+    <header>
+        <div class="div-title">
+            <h1>INFOCOURS</h1>
+        </div>
+        <div class="div-nav">
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a class="Cours"href="Cours.html">Cours</a></li>
+                <li><a href="a_propos.html">A propos</a></li>
+                <li><a class="inscription" href="inscription.html">Inscription</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="formu">
+        <fieldset>
+            <h2>Inscription</h2>
+            <form action="../traitement/connection.php" method="post">
+                <Label for="nom">Nom</Label><br>
+                <input type="text" name="nom" id="" required="required"><br>
+                <Label for="prenom">Prenom</Label><br>
+                <input type="text" name="prenom" id="" required="required"><br>
+                <Label for="date">Date de Naissance</Label><br>
+                <input type="date" name="date" id="" required="required"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="" required="required"><br>
+                <label for="contact">Contact</label><br>
+                <input type="tel" name="Numero" id=""><br>
+                <label for="Password">Mot de passe</label><br>
+                <input type="password" name="Password" id="" required="required"><br>
+                <Label for="pAssword">Entrez a nouveau le mot de passe</Label><br>
+                <input type="password" name="pAssword" id="" required="required"><br>
+                <button type="submit" class="button"> S'inscrire</button>
+                <p>Etes vous deja inscrit ? <a href="connexion.html">Se connecter</a></p>
+            </form>
+
+        </fieldset>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="">Telegram</a></li>
+            <li><a href="">whatsapp</a></li>
+            
+        </ul>
+        <div class="container">
+            <p>&copy; 2024 INFOCOURS. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
